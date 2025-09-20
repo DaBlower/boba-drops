@@ -56,9 +56,7 @@ async function fetchData() {
     }
     submissionsPush += `
       <div class="grid-submission">
-        <div class="submission-photo"
-          style="background-image: url(${photoUrl});">
-        </div>
+        <img src="${photoUrl}" alt="Screenshot" loading="lazy" class="submission-photo">
         <span class="status ${submission.fields.Status.toLowerCase()}"></span>
         <div class="links">
           <a href="${
