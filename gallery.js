@@ -36,7 +36,6 @@ async function fetchData() {
     "select",
     JSON.stringify({ filterByFormula: filterFormula })
   );
-  params.append("cache", true);
   const response = await fetch(
     `https://${BASE_DOMAIN}/v0.1/Boba Drops/Websites?${params}`
   );
